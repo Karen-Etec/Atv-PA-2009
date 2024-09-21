@@ -18,7 +18,7 @@ public class Exercicio3 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite seu nome: ");
         String nome = scanner.next();
-        if (nome.equals("julia")) {
+        if (nome.equals("Karen")) {
             System.out.println("Pessoa com nome igual");
         } else {
             System.out.println("Pessoa com nome diferente");
@@ -32,7 +32,7 @@ public class Exercicio3 {
         }
         System.out.print("Digite seu peso (em kg): ");
         double peso = scanner.nextDouble();
-        if (peso == 56) {
+        if (peso == 40) {
             System.out.println("Pessoa com peso igual");
         } else {
             System.out.println("Pessoa com peso diferente");
@@ -44,12 +44,12 @@ public class Exercicio3 {
         } else {
             System.out.println("Pessoa com altura diferente");
         }
-        System.out.print("Para qual time voce torce?");
+        System.out.print("Digite seu jogo favorito: ");
         String time = scanner.next();
-        if (time.equals("Palmeiras")) {
-            System.out.println("Pessoa com time igual");
+        if (jogoFavorito.equals("Your Turn to Die")) {
+            System.out.println("Pessoa com jogo favorito igual");
         } else {
-            System.out.println("Pessoa com time diferente");
+            System.out.println("Pessoa com jogo favorito diferente");
         }
         System.out.print("Digite seu animal favorito: ");
         String animalFavorito = scanner.next();
@@ -60,22 +60,22 @@ public class Exercicio3 {
         }
         System.out.print("Digite sua cor favorita: ");
         String corFavorita = scanner.next();
-        if (corFavorita.equals("preto")) {
+        if (corFavorita.equals("verde")) {
             System.out.println("Pessoa com cor favorita igual");
         } else {
             System.out.println("Pessoa com cor favorita diferente");
         }
         int contador = 0;
-        if (nome.equals("julia")) contador++;
+        if (nome.equals("Karen")) contador++;
         if (idade == 17) contador++;
-        if (peso == 56) contador++;
+        if (peso == 40) contador++;
         if (altura == 1.55) contador++;
-        if (time.equals("Palmeiras")) contador++;
+        if (jogoFavorito.equals("Your Turn to die")) contador++;
         if (animalFavorito.equals("Cachorro")) contador++;
-        if (corFavorita.equals("Preto")) contador++;
+        if (corFavorita.equals("Verde")) contador++;
 
         if (contador >= 3) {
-            System.out.println("Voce e bem parecida/o comigo!");
+            System.out.println("Voce e bem parecid@ comigo!");
         }
 
     }
